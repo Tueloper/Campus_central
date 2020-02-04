@@ -8,40 +8,17 @@
               <div class="col-md-6 col-sm-6 col-xs-6 ">
                 <div class="">
                   <ul >
-                    <li class="">
-                      <div class="row  ml-0 events-listing bxs">
-                        <div class="col-md-4 col-4 text-center events-listing-text">
-                          <h5>13th </h5>
-                          <p>Jan,2020</p>
-                          <a href="#" class="btn btn-danger mt-3">Read More</a>
-                          
-                        </div>
-                        <div class="col-md-8 col-8 events-listing-content pt-3">
-                          <h5>Campus Central</h5>
-                          <p>
-                            Campus cntral focuses on helping lecturer, students and intending students to love the school environment.
-                            events are organize to support the 
-                          </p>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="">
-                      <div class="row ml-0 events-listing bxs">
-                        <div class="col-md-4 col-4 text-center events-listing-text">
-                          <h5>13th </h5>
-                          <p>Jan,2020</p>
-                          <a href="#" class="btn btn-danger mt-3">Read More</a>
-                          
-                        </div>
-                        <div class="col-md-8 col-8 events-listing-content pt-3">
-                          <h5>Campus Central</h5>
-                          <p>
-                            Campus cntral focuses on helping lecturer, students and intending students to love the school environment.
-                            events are organize to support the 
-                          </p>
-                        </div>
-                      </div>
-                    </li>
+                    <eventPost id="1" 
+                    day="13th" 
+                    month="Jan, 2020"
+                    title="Campus Central" 
+                    previewText="Lorem ipsum dolor sit amet consectur adipisicing elit. Placeat, aliquammoles tiae. Lorem ipsum dolor sit amet consectur adipisicing elit." />
+                   <eventPost id="2" 
+                    day="13th" 
+                    month="Jan, 2020"
+                    title="Campus Central" 
+                    previewText="Lorem ipsum dolor sit amet consectur adipisicing elit. Placeat, aliquammoles tiae. Lorem ipsum dolor sit amet consectur adipisicing elit." />
+                   
                   </ul>
                 </div>
               </div>
@@ -124,9 +101,16 @@
   </div>
 </template>
 
+
+<script >
+import eventPost from '@/components/eventsPost/eventPost'
+export default{
+  components:{
+    eventPost: eventPost,
+}
+}
+</script>
 <style scoped>
-
-
 @media (max-width: 767.98px){
   .content-sect{
   padding: 27px;
@@ -249,5 +233,13 @@
 }
 .rating-sec p {
     padding-right: 80px;
+}
+.img-evt {
+    /* background: url(assests/img/pple.jpeg); */
+    width: 100px;
+    background-size: cover;
+    border: 246px;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 </style>

@@ -78,11 +78,7 @@
                             </div>
         
                             </div>
-        
-        
-        
-        
-                            </form>
+                          </form>
                         </section>
                     </div>
                 </div>
@@ -90,6 +86,11 @@
     </b-container>
   </div>
 </template>
+<script >
+export default{
+  layout: 'logout',
+}
+</script>
 <style scoped>
  @media (max-width: 767.98px){
     .content-sect{
