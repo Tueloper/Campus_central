@@ -42,47 +42,17 @@
                 <hr>
                 <h3>Results for search of "<span id="searched-entity">John Hopkins</span>"</h3>
                 <section id="result-section">
-                    <div class="container">
+                    <div class="">
                         <div class="row">
-                            <div class="col-md-12">
-                                <div class="result">
-                                    <div class="card result-container">
-                                        <div class="row">
-                                            <div class="col-md-2 col-12">
-                                                <div class="image-container">
-                                                    <img src="~/assets/img/pple.jpg" alt="man" class="img-fluid">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-10 col-12">
-                                                <div class="result-info">
-                                                    <h2 class="search-title">Mr. John Hopkins</h2>
-                                                    <p>Lecturer in Business Department in University of Uyo</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-12">
-                                <div class="result">
-                                    <div class="card result-container">
-                                        <div class="row">
-                                            <div class="col-md-2 col-12">
-                                                <div class="image-container">
-                                                    <img src="~/assets/img/boy.png" alt="man" class="img-fluid">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-10 col-12">
-                                                <div class="result-info">
-                                                    <h2 class="search-title">Mr. John Hopkins</h2>
-                                                    <p>Lecturer in Business Department in University of Uyo</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            
+                            <ratePost id="1" 
+                            title="Mr. John Hopkins" 
+                            previewText="Lecturer in Business Department in University of Uyo" />
+                           
+                           <ratePost id="2" 
+                            title="Mr. John Hopkins" 
+                            previewText="Lecturer in Business Department in University of Uyo" />
+                           
                             <div class="col-md-12 text-center p-l-24">
                                 <a href="#" class="btn btn-danger">Load More</a>
                             </div>
@@ -96,8 +66,12 @@
   </div>
 </template>
 <script>
+import ratePost from '@/components/ratePost/ratePost'
 export default{
    layout: 'logout',
+   components:{
+       ratePost:ratePost
+   }
   }
 </script>
 <style scoped>
@@ -110,10 +84,11 @@ export default{
   .content-sect{
         width: 78%;
       float: right;
-      margin: 101px 32px 0 22px;
+      margin: 101px 22px 0 22px;
       border: 0px solid #ccc;
       padding: 48px;
       box-shadow: 0px 0px 3px 0px;
+      margin-bottom: 77px;
   }
   .heading{
     color: rgb(0, 0, 0);

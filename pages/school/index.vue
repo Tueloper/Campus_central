@@ -7,16 +7,16 @@
               <div class="row">
                 <div class="col-md-5">
                     <div class="form-group">
-                        <input type="text" class="form-control" id="search-name" placeholder="Enter Your Search">
+                        <input type="text" class="form-control" id="search-name" placeholder="School Name">
                     </div>
                 </div>
                 <div class="col-md-5">
                     <div class="form-group">
-                        <input type="text" class="form-control" id="search-school" placeholder="Enter Your Search">
+                        <input type="text" class="form-control" id="search-school" placeholder="Location">
                     </div>
                 </div>
                 <div class="col-md-2">
-                    <button type="button" class="btn btn-danger btn-block">Search</button>
+                    <button type="submit" class="btn btn-danger btn-block">Search</button>
                 </div>
               </div>
             </form>
@@ -26,47 +26,19 @@
             <section id="result-section">
               <div class="">
                     <div class="">
-                      <div class="">
                         <div class="result">
-                          <div class="card result-container">
-                              <div class="row">
-                                  <div class="col-md-4">
-                                      <div class="image-container">
-                                          <img src="img/Covenant-University.jpg" alt="man" class="img-fluid">
-                                      </div>
-                                  </div>
-                                  <div class="col-md-8">
-                                      <div class="result-info">
-                                          <h3 class="search-title">University of Uyo</h3>
-                                          <p class="search-subtitle">Uyo, Akwa Ibom State Nigeria</p>
-                                          <p><span><i class="fa fa-star"></i><span id="rate-no"> 0</span> </span> Rate <span class="pull-right"><i class="fa fa-book"></i> <span id="report-no">0</span> Report</span></p>
-
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
+                         <schoolPost id="1" thumbnail="../assets/img/pple.jpg" title="University of Uyo" 
+                         previewText=" Lorem ipsum dolor sit amet consectur adipisicing elit. 
+                         Placeat, aliquammoles tiae "/>
+                         <schoolPost id="2" thumbnail="" title="University of Uyo" 
+                         previewText=" Lorem ipsum dolor sit amet consectur adipisicing elit. 
+                         Placeat, aliquammoles tiae "/>
+                         <schoolPost id="3" thumbnail="" title="University of Uyo" 
+                         previewText=" Lorem ipsum dolor sit amet consectur adipisicing elit. 
+                         Placeat, aliquammoles tiae "/>
+                          
                         </div>
-                      </div>
-                      <div class="">
-                        <div class="result">
-                            <div class="card result-container">
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <div class="image-container">
-                                            <img src="img/Covenant-University.jpg" alt="man" class="img-fluid">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-8">
-                                        <div class="result-info">
-                                            <h3 class="search-title">Akwa ibom state University</h3>
-                                            <p class="search-subtitle">Uyo, Akwa Ibom State Nigeria</p>
-                                            <p><span><i class="fa fa-star"></i><span id="rate-no"> 0</span> </span> Rate <span class="pull-right"><i class="fa fa-book"></i> <span id="report-no">0</span> Report</span></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                      </div>
+                     
                     </div>
               </div>
             </section>
@@ -85,8 +57,11 @@
   </div>
 </template>
 <script >
+import schoolPost from '@/components/schoolPost/schoolPost'
 export default{
-   layout: 'logout',
+   components: {
+     schoolPost: schoolPost
+   }
   }
 </script>
 <style scoped>
@@ -99,10 +74,11 @@ export default{
   .content-sect{
         width: 78%;
       float: right;
-      margin: 101px 32px 0 22px;
+      margin: 101px 22px 0 22px;
       border: 0px solid #ccc;
       padding: 48px;
       box-shadow: 0px 0px 3px 0px;
+      margin-bottom: 77px;
   }
   .heading{
     color: rgb(0, 0, 0);

@@ -120,7 +120,7 @@ export default{
 .content-sect{
       width: 78%;
     float: right;
-    margin: 101px 32px 0 22px;
+    margin: 101px 22px 0 22px;
     border: 0px solid #ccc;
     padding: 48px;
     box-shadow: 0px 0px 3px 0px;

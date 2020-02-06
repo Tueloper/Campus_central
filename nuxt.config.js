@@ -59,6 +59,7 @@ export default {
       'ToastPlugin',
       'ModalPlugin',
       'LayoutPlugin',
+      'NavbarPlugin',
     ],
   },
   /*

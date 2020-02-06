@@ -34,7 +34,7 @@
                                   </div>
                               </div>
                               <div class="col-md-2">
-                                  <button type="button" class="btn btn-danger btn-block">Search</button>
+                                  <button type="submit" class="btn btn-danger btn-block">Search</button>
                               </div>
                           </div>
                       </form>
@@ -42,48 +42,20 @@
 
                       <h3>Results for search of "<span id="searched-entity">John Hopkins</span>"</h3>
                       <section id="result-section">
-                              <div class="row">
-                                  <div class="col-md-10 col-12">
-                                      <div class="result">
-                                          <div class="card result-container">
-                                              <div class="row">
-                                                  <div class="col-md-4 col-12">
-                                                      <div class="image-container">
-                                                          <img src="img/man.png" alt="man" class="img-fluid">
-                                                      </div>
-                                                  </div>
-                                                  <div class="col-md-8 col-12">
-                                                      <div class="result-info">
-                                                          <h2 class="search-title">Mr. John Hopkins</h2>
-                                                          <p class="search-subtitle">Lecturer in Business Department in University of Uyo</p>
-                                                      </div>
-                                                  </div>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </div>
-                                  <div class="col-md-4 col-12"></div>
+                              <div class="row ">
+                                 <reportsPost  id="1" 
+                                 title="Mr John Hopkin" 
+                                 previewText="Lecturer in Business Department in University of Uyo" 
+                                 />
+                                 <reportsPost id="2" 
+                                 title="Mr John Hopkin" 
+                                 previewText="Lecturer in Business Department in University of Uyo" 
+                                 />
+                                 <reportsPost id="3" 
+                                 title="Mr John Hopkin" 
+                                 previewText="Lecturer in Business Department in University of Uyo" 
+                                 />
 
-                                  <div class="col-md-10 col-12">
-                                      <div class="result">
-                                          <div class="card result-container">
-                                              <div class="row">
-                                                  <div class="col-md-4 col-12">
-                                                      <div class="image-container">
-                                                          <img src="img/man.png" alt="man" class="img-fluid">
-                                                      </div>
-                                                  </div>
-                                                  <div class="col-md-8 col-12">
-                                                      <div class="result-info">
-                                                          <h2 class="search-title">Mr. John Hopkins</h2>
-                                                          <p class="search-subtitle">Lecturer in Business Department in University of Uyo</p>
-                                                      </div>
-                                                  </div>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </div>
-                                  <div class="col-md-4 col-12"></div>
                               </div>
                               <div class="row">
                                   <div class="col-md-4"></div>
@@ -102,8 +74,12 @@
   </div>
 </template>
 <script>
+import reportsPost from '@/components/reportsPost/reportsPost'
 export default{
    layout: 'logout',
+   components:{
+       reportsPost:reportsPost
+   }
   }
 </script>
 <style scoped>
@@ -116,35 +92,15 @@ export default{
   .content-sect{
         width: 78%;
       float: right;
-      margin: 101px 32px 0 22px;
+      margin: 101px 22px 0 22px;
       border: 0px solid #ccc;
       padding: 48px;
       box-shadow: 0px 0px 3px 0px;
+      margin-bottom: 77px;
   }
   .heading{
     color: rgb(0, 0, 0);
       font-size: 30px;
       font-weight: 900;
-  }
-  .card {
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      min-width: 0px;
-      overflow-wrap: break-word;
-      background-color: rgb(255, 255, 255);
-      background-clip: border-box;
-      border-width: 1px;
-      border-style: solid;
-      border-color: rgba(0, 0, 0, 0.125);
-      border-image: initial;
-      border-radius: 0.25rem;
-  }
-  .user-search-form {
-    margin: 40px 0;
-}
-  .result-container {
-      padding: 20px;
-      margin: 10px 0px;
   }
 </style>

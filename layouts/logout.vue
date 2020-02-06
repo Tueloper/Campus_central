@@ -38,8 +38,8 @@ html, body {
 
 </style>
 <script>
-import TheHeader from '@/components/TheHeader/TheHeader'
-import SideBar from '@/components/SideBar/SideBar'
+import TheHeader from '@/components/Navigation/TheHeader'
+import SideBar from '@/components/Navigation/SideBar'
 import Footer from '@/components/Footer/Footer'
 export default{
   components:{

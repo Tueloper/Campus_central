@@ -1,4 +1,4 @@
-<template>
+<template> 
   <div>
     <TheHeader/>
     <SideBar/>
@@ -7,7 +7,26 @@
     
   </div>
 </template>
+</style>
+<script>
+import TheHeader from '@/components/Navigation/TheHeader'
+import SideBar from '@/components/Navigation/SideBar'
+import Footer from '@/components/Footer/Footer'
+export default{
+  components:{
+    TheHeader,
+    SideBar,
+    Footer
+},
+data(){
+  return{
+    displaySidenav:false
+  }
+} 
+}
 
+      
+</script> 
 <style>
 html, body {
   font-family:'Nunito Sans', sans-serif;
@@ -36,19 +55,5 @@ html, body {
   padding: 10px 30px;
 }
 
-</style>
-<script>
-import TheHeader from '@/components/TheHeader/TheHeader'
-import SideBar from '@/components/SideBar/SideBar'
-import Footer from '@/components/Footer/Footer'
-export default{
-  components:{
-    TheHeader,
-    SideBar,
-    Footer
-}
-}
 
-      
-</script> 
  
