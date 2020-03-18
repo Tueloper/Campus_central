@@ -1,0 +1,386 @@
+body {
+  overflow-x: hidden;
+  color: #000;
+  font-family: 'Nunito Sans', sans-serif;
+}
+/* navigation */
+  
+/* .navbar {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: .9rem;
+  letter-spacing: 0.1rem;
+  padding: 15px 0;
+} */
+
+.navbar-nav .nav-item {
+  margin: 0 10px;
+}
+
+.nav-link {
+  font-weight: 700;
+  padding: 10px;
+}
+
+.navbar-nav .nav-item .btn {
+  color: #fff;
+  font-weight: 500;
+  padding: 10px;
+  text-transform: capitalize;
+  border: none;
+}
+
+.navbar-nav .nav-item .btn:hover {
+  color: #fff;
+}
+
+#banner {
+  padding: 60px 0;
+  background: linear-gradient(45deg, #000000c7, #00000094),url('../img/Covenant-University.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  height: 400px;
+}
+
+.banner-txt {
+  padding-top: 100px;
+}
+
+.heading {
+  color: #000;
+  font-size: 30px;
+}
+
+.heading h1, .heading h2 {
+  font-weight: bold;
+}
+
+p{
+  font-size: 16px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: justify;
+}
+
+.sub-heading h2{
+  font-size: 20px;
+  color: #000;
+  padding-top: 8px;
+  font-weight: 900;
+}
+
+#search-section {
+  margin-top: 110px;
+}
+
+.search-form .form-group .form-control {
+  margin-bottom: 0!important;
+}
+
+#share-section {
+  margin-top: 100px;
+  padding: 40px 0;
+  background-color: #d6cbcb6b;
+}
+
+.share-writeup .heading{
+  padding-top: 100px;
+}
+
+.about-section .heading{
+  padding-top: 70px;
+}
+
+
+/* slider */
+.wrapper {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+#categories {
+  padding: 30px 0;
+}
+
+.inner-section a {
+  color: #000;
+}
+
+.inner-section a:hover {
+  text-decoration: none;
+}
+.about-section {
+  padding: 75px 0;
+}
+
+.category {
+  text-align: center;
+  padding: 30px 0;
+  margin-bottom: 30px;
+}
+
+.category i{
+  color: #dc3545;
+}
+.category:hover i{
+  color: #ffffff;
+}
+
+#rate:hover {
+  color: #fff;
+  background: #c935dc;
+}
+
+#school:hover {
+  color: #fff;
+  background: #35dc35;
+}
+
+#event:hover {
+  color: #fff;
+  background: #dc7235;
+}
+
+#report:hover {
+  color: #fff;
+  background: #35bbdc;
+}
+
+
+#trends {
+  text-align: center;
+  padding: 30px;
+  background: linear-gradient(45deg, #000000db, #000000c7),url(../img/uyo.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color: #fff;
+  padding: 91px
+}
+
+#post-section {
+  margin: 40px 0;
+  
+}
+
+.post {
+  padding: 20px;
+  margin: 30px 0;
+}
+
+#news-letter {
+  padding: 30px 0;
+  background-color: #d6cbcb6b;
+}
+
+#news-letter h3 {
+  font-weight: 700;
+  color: #000;
+  font-size: 20px;
+}
+
+/* newsletter section start*/
+
+
+#news-letter .form-control {
+  height: 50px;
+  border-color: #ffffff;
+  border-radius:0;
+}
+
+#news-letter .form-control:focus {
+  box-shadow: none;
+  border: 2px solid #243c4f;
+}
+
+#news-letter .btn {
+  min-height: 50px; 
+  border-radius:0;
+  background: #243c4f;
+  color: #fff;
+  font-weight:600;
+}
+
+
+/* end */
+
+footer {
+  background: #000;
+  padding: 20px 0;
+  color: #ffffff;
+}
+
+
+
+footer .social-group .fa-danger{
+  color: #dc3545
+} 
+
+
+/* dashboard */
+
+#sidebar {
+  position: fixed;
+	width: 120px;
+	height: 100%;
+	background: #000;
+}
+
+.main-content {
+  margin-left: 150px;
+  padding: 30px;
+}
+
+.user-search-form {
+  margin: 40px 0;
+}
+
+.result-container {
+  padding: 20px;
+  /* height: 150px; */
+  margin: 10px;
+}
+
+.result-container img {
+  height: 120px;
+}
+
+.personal-display {
+  padding: 20px !important;
+}
+
+.comment-section {
+  margin: 30px 0;
+}
+
+.comment-section h3 {
+  padding: 10px 0;
+}
+
+.comment-section img {
+  height: 60px;
+}
+
+
+/* avatar for profile page */
+
+.profile-form {
+  padding: 30px;
+}
+
+.school-info {
+  padding: 20px;
+}
+
+.avatar-pic {
+  width: 150px;
+  }
+
+
+
+
+/* media queries */
+
+@media only screen and (max-width: 600px) {
+
+  .navbar {
+    padding: 10px 15px !important;
+  }
+
+  .nav-link {
+    text-align: center;
+  }
+
+  .navbar-nav .nav-item .btn {
+    margin-bottom: 10px;
+  }
+  .heading h1, .heading h2 {
+    font-size: 28px;
+  }
+  p {
+    font-size: 16px;
+  }
+
+  .heading {
+    font-size: 26px;
+  }
+
+  /* .content-section h2, h3 {
+    font-size: 18px;
+  } */
+
+  .banner-txt {
+    padding: 40px 0;
+  }
+
+  #banner {
+    margin-bottom: 100px;
+  }
+
+  .search-section {
+    z-index: 49;
+  }
+  .about-section {
+    padding: 20px;
+  }
+  .category i{
+    color: #dc3545;
+  }
+  .category:hover i{
+    color: #ffffff;
+  }
+  
+  #rate:hover {
+    color: #fff;
+    background: #c935dc;
+  }
+  
+  #school:hover {
+    color: #fff;
+    background: #35dc35;
+  }
+  
+  #event:hover {
+    color: #fff;
+    background: #dc7235;
+  }
+  
+  #report:hover {
+    color: #fff;
+    background: #35bbdc;
+  }
+
+  /* dashboard section */
+  .result-container img {
+    height: auto;
+  }
+
+  .search-title {
+    font-size: 24px;
+    padding-top: 10px;
+    font-weight: 900;
+  }
+
+  .search-subtitle {
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    color: rgba(34, 27, 27, 0.733);
+  }
+
+  .image-container img {
+    height: auto;
+  }
+
+  .sub-heading {
+    font-size: 24px !important;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .pt-20 {
+    padding-top: 20px;
+  }
+  
+}
